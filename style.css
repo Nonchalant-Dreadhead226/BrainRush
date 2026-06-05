@@ -15,6 +15,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Header */
 .header {
     height: 70px;
     width: 100%;
@@ -68,6 +69,7 @@ body {
     border-color: #5a3fc0;
 }
 
+/* Shared button */
 .start-button {
     background-color: #5a3fc0;
     color: #fff;
@@ -90,6 +92,7 @@ body {
     background-color: #7c5cf5;
 }
 
+/* Global svg default */
 svg {
     opacity: 0.8;
     color: #7c5cf5;
@@ -98,6 +101,7 @@ svg {
     margin: 0;
 }
 
+/* Hero */
 .hero {
     width: 100%;
     min-height: 520px;
@@ -171,6 +175,7 @@ svg {
     color: #7c5cf5;
 }
 
+/* Home info cards */
 .home-info {
     width: 100%;
     background-color: #0f0f13;
@@ -231,6 +236,7 @@ svg {
     line-height: 1.5;
 }
 
+/* Info section */
 .info-container {
     width: 100%;
     background-color: #0f0f13;
@@ -285,6 +291,7 @@ svg {
     opacity: 0.9;
 }
 
+/* Modals */
 .modal {
     position: fixed;
     left: 0;
@@ -356,6 +363,7 @@ hr {
     margin: 0 0 20px;
 }
 
+/* Form inputs */
 input[type=text],
 input[type=password] {
     width: 93%;
@@ -474,6 +482,7 @@ button:hover {
     margin-bottom: 14px;
 }
 
+/* Arena */
 .arena {
     width: 100%;
     min-height: 420px;
@@ -542,6 +551,7 @@ button:hover {
     50%       { transform: scale(1.5); opacity: 0.6; }
 }
 
+/* Result */
 .result-time {
     display: flex;
     align-items: baseline;
@@ -595,6 +605,7 @@ button:hover {
     border-color: #5a3fc0;
 }
 
+/* Stats panel */
 .stats-panel {
     width: 100%;
     background-color: #0f0f13;
@@ -646,6 +657,7 @@ button:hover {
     color: #7777aa;
 }
 
+/* History dots */
 .history-row {
     display: flex;
     gap: 10px;
@@ -684,6 +696,7 @@ button:hover {
     pointer-events: none;
 }
 
+/* Scale list */
 .scale-list {
     display: flex;
     flex-direction: column;
