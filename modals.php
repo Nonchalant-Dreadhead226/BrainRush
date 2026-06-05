@@ -1,5 +1,3 @@
-
-<!-- Register Modal -->
 <div id="id01" class="modal" <?php echo $_SESSION['AddRegisterDisplay']; ?>>
     <span class="close" onclick="document.getElementById('id01').style.display='none'" title="Close Modal">&times;</span>
     <form class="modal-content" method="POST" action="signup.php" novalidate>
@@ -36,7 +34,6 @@
     </form>
 </div>
 
-<!-- Login Modal -->
 <div id="id02" class="modal" <?php echo $_SESSION['AddLoginDisplay']; ?>>
     <span class="close" onclick="document.getElementById('id02').style.display='none'" title="Close Modal">&times;</span>
     <form class="modal-content" method="POST" action="login.php" novalidate>
