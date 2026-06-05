@@ -3,9 +3,9 @@ session_start();
 mysqli_report(MYSQLI_REPORT_OFF);
 
 function signup_error(string $msg): void {
-    $_SESSION['signup_error']       = $msg;
+    $_SESSION['signup_error'] = $msg;
     $_SESSION['AddRegisterDisplay'] = 'style="display:block"';
-    $_SESSION['AddLoginDisplay']    = 'style="display:none"';
+    $_SESSION['AddLoginDisplay'] = 'style="display:none"';
     header('Location: index.php');
     exit;
 }
@@ -39,7 +39,6 @@ $password_hash = password_hash($_POST["psw"], PASSWORD_DEFAULT);
 $mysqli = require __DIR__ . "/database.php";
 
 $sql = "INSERT INTO user (name, email, password_hash) VALUES (?, ?, ?)";
-
 $stmt = $mysqli->stmt_init();
 
 if (!$stmt->prepare($sql)) {
@@ -54,8 +53,8 @@ if ($stmt->execute()) {
     exit;
 } else {
     if ($mysqli->errno === 1062) {
-        signup_error("An account with that email already exists.");
+        signup_error("Jau eksistē konts ar šādu e-pastu vai paroli.");
     } else {
-        signup_error("Registration failed. Please try again.");
+        signup_error("Reģistrācija neizdevās. Lūdzu mēģiniet atkal.");
     }
 }
